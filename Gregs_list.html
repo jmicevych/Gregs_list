@@ -5,21 +5,46 @@
 	<link rel="stylesheet" type="text/css" href="Gregs_style.css">
 </head>
 <body>
-	<nav>
+	<nav class="topnav">
 		<ul>
 			<li>Greg's List</li>
-			<li><a href="https://www.google.com/">Post</a></li>
-			<li><a href="https://www.google.com/">Account</a></li>
+			<li><a class=topnavlink href="https://www.google.com/">Post</a></li>
+			<li><a class=topnavlink href="https://www.google.com/">Account</a></li>
 		</ul>
 	</nav>
 	<main>
-		<div>
+		<section>
 			<p class="no-space">Search Jobs</p>
+			<div class="spacer-10"></div>
 			<form class="inline">
-				<input type="text" name="Search software jobs"  class="search-jobs" value="Search software jobs">
+				<input type="text" name="Search software jobs" id="search-jobs" class="outline" value="Search software jobs">
 			</form>
-			<img class="magnifier" class="outline" src="magnifying-glass.png">
-		</div>
+			<img id="magnifier" class="outline inline" src="magnifying-glass.png">
+		</section>
+		<div class="spacer-30"></div>
+		<nav class="outline inline">
+			<p class="inline navbutton rightborder">< prev</p>
+			<p class="inline navbutton rightborder">1 to 100 of 179</p>
+			<p class="inline navbutton">next ></p>
+		</nav>
+		<div class="spacer-40"></div>
+		<section>
+			<div>
+				<p class="inline resultslist grey-text">June 22</p>
+				<p class="inline resultslist blue-text"><strong>Technical Project Manager</strong></p>
+				<p class="inline resultslist grey-text">Midtown East</p>
+			</div>
+			<div>
+				<p class="inline resultslist grey-text">June 21</p>
+				<p class="inline resultslist blue-text"><strong>Frontend Developer</strong></p>
+				<p class="inline resultslist grey-text">SoHo</p>
+			</div>
+			<div>
+				<p class="inline resultslist grey-text">June 20</p>
+				<p class="inline resultslist blue-text"><strong>Senior Python Developer / Cofounder</strong></p>
+				<p class="inline resultslist grey-text">Flatiron</p>
+			</div>
+		</section>
 	</main>
 </body>
 </html>
